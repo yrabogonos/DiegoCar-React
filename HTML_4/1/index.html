@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .imageholder{
+        height: 300px;
+        width: 400px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div class="imageholder">
+
+    </div>
+    <div class="controls">
+        <button id="fst" data-path="sample-birch-400x300.jpg">Image1</button>
+        <button id="scnd" data-path="sample-city-park-400x300.jpg">Image2</button>
+        <button id="thrd" data-path="sample-clouds-400x300.jpg">Image3</button>
+    </div>
+
+<script>
+    var holder = document.querySelector('.imageholder');
+    
+    document.querySelectorAll('button').forEach(function(btn){
+        btn.onclick = function(){
+         for(const child of holder.children){
+            if(child.nodeName == 'IMG'){
+                child.remove();
+            }
+         }
+         let img = new Image();
+         img.src = btn.dataset.path;
+         holder.appendChild(img);
+       };
+    });
+    
+       
+    
+        
+    
+</script>
+</body>
+</html>

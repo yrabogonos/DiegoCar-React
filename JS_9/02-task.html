@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Задание:
+        Создайте функцию showWithDelay(массив);
+        Метод принимает массив и на консоль по очереди выводит каждый элемент массива с интервалом в одну секунду
+        Сделайте два варианта с setInterval и setTimeout
+        */
+
+        let testProb = [1,2,3,4,5,6,7,8,9,10];
+        let i = 0;
+        let j = 0
+        
+        function showNext(arr){
+            if(i < arr.length){
+                console.log(arr[i]);
+                i = i + 1;
+            }
+        }
+
+        function showWithDelay1(arr){
+            let interval = setInterval(showNext, 300, arr);
+        }
+
+        function show(el){
+            setTimeout(()=>console.log(el), 3000 + j*1000);
+            j++;
+        }
+
+        function showWithDelay2(arr){
+            for(num of arr){
+                show(num);
+            }
+        }
+        
+        // showWithDelay1(testProb);
+        showWithDelay2(testProb);
+        
+      
+        
+    </script>
+</body>
+
+</html>

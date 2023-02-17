@@ -1,0 +1,23 @@
+.container{
+    width: 70%;
+}
+.item{
+    padding: 25px 0px 25px 25px;
+    color: white;
+}
+.f{
+    border-left: 5px solid #228d24;
+    background-color: #90ee90;
+}
+.s{
+    border-left: 5px solid #0000fe;
+    background-color: #01ffff;
+}
+.t{
+    border-left: 5px solid #fed700;
+    background-color: #ffff01;
+}
+.last{
+    border-left: 5px solid #fe0000;
+    background-color: #ffbfcd;
+}

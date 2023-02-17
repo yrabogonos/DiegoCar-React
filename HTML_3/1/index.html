@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="a">Operand 1</label>
+        <input type="text" name="operand1" id="a"><br><br>
+        <label for="b">Operand 2</label>
+        <input type="text" name="operand2" id="b"><br><br><br>
+        
+    </form>
+    <div class="action">
+        <button class="add" data-op="+">+</button>
+        <button class="subtract" data-op="-">-</button>
+        <button class="multiply" data-op="*">*</button>
+        <button class="divide" data-op="/">/</button>
+    </div>
+    <br><br>Result = <input type="text" name="result" id="res">
+</body>
+<script>
+    var action = document.querySelector('.action');
+    action.onclick = function(e){
+        let op = e.target.dataset.op;
+        
+        let num1 = document.forms[0].operand1.value;
+        let num2 = document.forms[0].operand2.value;
+        if(Number(num1) == 'NaN' && Number(num2) == 'NaN'){
+            num1 =0;
+            num2=0;
+        }
+        var worker = new Worker('worker.js');
+        worker.postMessage([op, Number(num1), Number(num2)]);
+        worker.onmessage = (e) => document.querySelector('#res').value = e.data;
+        // console.log(num1);
+    };
+    
+</script>
+</html>

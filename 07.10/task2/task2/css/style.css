@@ -1,0 +1,22 @@
+ul{
+    list-style: none;
+    
+}
+li{
+    font-size: 24px;
+    position: relative;
+    padding-left: 20px;
+   
+}
+li::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #add8ea;
+    top: 30%;
+    right: 100%;
+    
+}

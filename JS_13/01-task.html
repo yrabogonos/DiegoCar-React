@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 01</title>
+</head>
+
+<body>
+    <form>
+        <input type="radio" name="color" value="#ffd800" /> Orange
+        <input type="radio" name="color" value="#5ade54" /> Green
+        <input id="saveButton" type="button" value="Сохранить" />
+    </form>
+
+    <script>
+        /*
+            Задание:
+            Добавьте возможность сохранить выбранный цвет страницы в cookies сроком на 1 неделю.
+            Добавьте восстановление выбранного цвета из cookies, если они есть, после загрузки документа.
+        */
+
+        
+
+        let radios = [document.querySelector('input[value="#ffd800"]'), document.querySelector('input[value="#5ade54"]')];
+        
+        function getColor(color){
+            let cookie = document.cookie;
+            let pos = cookie.indexOf(name+'=');
+            let val = new Array;
+            for(let i= pos+1; i < cookie.length; i++){
+                if(cookie[i] != ' ' || cookie[i] != ';'){
+                    val.push(cookie[i]);
+                }
+            }
+            return val.join('');
+        }
+        
+        let color = getColor();
+        console.log(color);
+        let cookie = document.cookie;
+        document.body.style.backgroundColor = color;
+        for(const radio of radios){
+            if(radio.getAttribute('value') == color){
+                radio.checked=true;
+            }
+        }
+
+
+        document.querySelector("#saveButton").addEventListener("click", function () {
+            const form = document.forms[0];
+            let selectedColor = form.color.value;
+            document.body.style.backgroundColor = selectedColor;
+            document.cookie = 'color=' + selectedColor + ';max-age=604800';
+
+        });
+        
+    </script>
+</body>
+
+</html>

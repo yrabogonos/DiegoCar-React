@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Данно массив. Поменяйте элемент с максимальным значением местами с элементом с минимальным значением.
+    </pre>
+    <script>
+        let values = [10, 20, 4, 6, 11, 9, 125, 1, 8, 0, 3];
+        let max, min;
+        max = values[0];
+        min = values[0];
+        for (let i= 0; i < values.length; i++){
+            if(max < values[i]){
+                max = values[i];
+            }
+            if(min > values[i]){
+                min = values[i];
+            }
+        }
+       indmax = values.indexOf(max);
+       indmin = values.indexOf(min);
+       values[indmax] = min;
+       values[indmin] = max;
+       console.log(values);
+    //    values[values.indexOf(max)] = min;  Чому так не працює? Це ж те саме.
+    </script>
+</body>
+</html>

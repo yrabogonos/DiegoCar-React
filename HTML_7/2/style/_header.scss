@@ -1,0 +1,46 @@
+$height: 131;
+@mixin fullSize{
+    width: 100%;
+    height: 100%;
+}
+@mixin shadow{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+@mixin blockNames($pos){
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: $pos;
+    padding-top: 20px;
+    padding-left: 10px;
+    
+    
+}
+$headerColor: lightblue;
+
+.header{
+   height: $height+px;
+   .header-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include fullSize;
+        background-color: $headerColor;
+        @include shadow;
+        .header-p{
+            @include blockNames(left);
+            // flex: 1 1 auto;
+            
+        }
+    }
+}
+.header .header-wrap{
+    @if $height < 200{
+        background-color: blue;
+    }
+    
+}
+
+
+
+

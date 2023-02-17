@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой калькулятор</title>
+</head>
+
+<body>
+    <script>
+        let inputX = prompt("Введите первое слагаемое", 0);
+        let inputY = prompt("Введите второе слагаемое", 0);
+
+        let x = Number(inputX);
+        let y = Number(inputY);
+
+        //let sum = x + y;
+        let sum =  inputX + inputY;
+        sum = x + y;
+        let res1 = inputX - inputY;
+        let res2 = inputX * inputY;
+        let res3 = inputX / inputY;
+
+        alert(`${x} + ${y} = ${Number(sum)}`);
+        alert(`${x} - ${y} = ${res1}`);
+        alert(`${x} * ${y} = ${res2}`);
+        alert(`${x} / ${y} = ${res3}`);
+        // ------------------------------
+        alert(`${x} ` + "+" + ` ${y}` + " =" + ` ${Number(sum)}`);
+        alert(`${x} ` + "-" + ` ${y}` + " =" + ` ${res1}`);
+        alert(`${x} ` + "*" + ` ${y}` + " =" + ` ${res2}`);
+        alert(`${x} ` + "/" + ` ${y}` + " =" + ` ${res3}`);
+    </script>
+</body>
+
+</html>

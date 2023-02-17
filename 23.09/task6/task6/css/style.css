@@ -1,0 +1,17 @@
+.section{
+    background-color: #ffa500;
+    margin-top: 50px;
+}
+.section-row-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20px;
+    line-height: 40px;
+}
+span{
+    font-weight: 24px;
+    font-weight: bold;
+}
+a{
+    text-decoration: underline;
+    color: black;
+}

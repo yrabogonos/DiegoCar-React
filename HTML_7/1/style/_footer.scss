@@ -1,0 +1,12 @@
+$footerColor: lightblue;
+.footer{
+    height: 10%;
+    .footer-wrap{
+        @include fullSize;
+        background-color: $footerColor;
+        @include shadow;
+        .footer-text{
+            @include blockNames(left);
+        }
+   }
+ }

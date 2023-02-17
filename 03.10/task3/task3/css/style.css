@@ -1,0 +1,63 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.form-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input{
+    border-radius: 1rem;
+}
+.log-input{
+    height: 80px;
+    flex: 0 0 45%;
+    margin-bottom: 100px;
+    background-color: rgb(229,229,229);
+    border: none;
+}
+.log-input:placeholder-shown{
+    color: rgb(114,114,114);
+    font-size: 24px;
+    padding-left: 50px;
+}
+.log-btn, .log-text{
+    flex: 0 0 100%;
+}
+.log-text{
+    flex-basis: 97%;          /* Чому, кнопка та text-area із flex-basis: 100% мають різну ширину? Потрібно було в text-area зменшити на 3% щоб підігнати розмір. Буду вдячний за відповідь! */
+}
+.log-text{
+    height: 500px;
+    margin-bottom: 100px;
+}
+.log-btn{
+    height: 100px;
+    background-color: rgb(255,59,60);
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0%;
+    border: none;
+}
+h1{
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+   color: rgb(90,90,90);
+}
+.log-text{
+    border-radius: 1rem;
+    background-color: rgb(229,229,229);
+    border: none;
+    resize: none;
+}
+.log-text:placeholder-shown{
+    color: rgb(114,114,114);
+    font-size: 24px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+

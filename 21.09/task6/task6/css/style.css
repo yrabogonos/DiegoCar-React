@@ -1,0 +1,26 @@
+.items{
+    width: 180px;
+}
+.item{
+    height: 180px;
+    box-sizing: border-box;
+}
+.items-fb{
+    background-color: blue;
+}
+.items-in{
+    background-color: #ffc0cb;
+}
+.items-tw{
+    background-color: #01ffff;
+}
+.items-yb{
+    background-color: #fe0000;
+}
+img{
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 25%;
+}

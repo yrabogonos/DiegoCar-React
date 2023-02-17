@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #canvas{
+        border: 3px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" height="600" width="500"></canvas>
+</body>
+
+<script>
+    let ctx = document.querySelector('#canvas').getContext('2d');
+    let iterations = 30;
+    let height = document.querySelector('#canvas').height;
+    let width = document.querySelector('#canvas').width;
+    // ctx.moveTo(10,0);
+    for(let i = 1; i < iterations; i++){
+        let wid = i * 20;
+        if(wid < width){
+            ctx.moveTo(i*20, 10);
+            ctx.lineTo(i*20, height-10);
+            ctx.stroke();
+        }
+        else{
+            break;
+        }
+        
+        
+    }
+    
+    for(let j = 1; j < iterations; j++){
+        let hei = j*20;
+        if(hei < height){
+            ctx.moveTo(10,j*20);
+            ctx.lineTo(width-10,j*20);
+            ctx.stroke();
+        }
+        else{
+            break;
+        }
+        
+        
+    }
+</script>
+</html>

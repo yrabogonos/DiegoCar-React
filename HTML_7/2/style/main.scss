@@ -1,0 +1,25 @@
+@import 'null';
+@import 'header';
+@import 'nav';
+@import 'footer';
+@import 'article';
+@import 'aside';
+
+.page-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    padding: 5px;
+}
+.main{
+    flex: 1 1 auto;
+}
+.main-wrap{
+    @include fullSize;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}

@@ -1,0 +1,92 @@
+body{
+    background-color: #f5f5f5;
+}
+.menu{
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-container{
+    height: 100px;
+    width: 60%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.menu-item{
+    flex: 0 1 300px;
+    font-size: 23px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 2s;
+}
+.menu-container{
+    background-color: #3690e8;
+}
+
+.drop-menu::after{
+    content: ''; 
+    position: absolute;
+    border: 8px solid transparent;
+    border-top: 8px solid white;
+    right: 80px;
+    top: 46px;
+}
+.drop-menu{
+    justify-content: left;
+    padding-left: 80px;
+    position: relative;
+}
+
+.menu-item:hover{
+    background-color: #2f7ac2;
+    
+}
+.border{
+    position: absolute;
+    display: block;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    height: 0px;
+    animation-name: slideDown;
+    animation-duration: 4s;
+    animation-fill-mode:forwards;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5) 
+    
+}
+
+@keyframes slideDown{
+    0%{
+        height: 0px;
+    }
+    25%{
+        height: 50px;
+    }
+    50%{
+        height: 100px;
+    }
+    75%{
+        height: 150px;
+    }
+    100%{
+        height: 200px;
+    }
+}
+.offer{
+    color: #939593;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

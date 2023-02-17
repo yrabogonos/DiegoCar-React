@@ -1,0 +1,27 @@
+body{margin: 0; padding: 0;}
+.socmedia{
+    background-color: SlateGray;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+.container{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.socmedia-icon{
+    background-color: white;
+    height: 30%;
+    border-radius: 50%;
+    display: flex;
+    flex-basis: 8%;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 60%;
+    height:  60%;
+}

@@ -1,0 +1,31 @@
+p{
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.form{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.input{
+    border: 1px solid rgb(227,227,227);
+    height: 50px;
+    width: 400px;
+}
+.input:placeholder-shown{
+    font-size: 20px;
+    color: grey;
+    padding-left: 30px;
+}
+.btn{
+    height: 50px;
+    width: 80px;
+    margin-left: 10px;
+    background-color: rgb(101,194,158);
+    border: none;
+    font-size: 20px;
+    color: white;
+}

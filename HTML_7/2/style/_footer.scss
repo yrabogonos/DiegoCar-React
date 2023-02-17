@@ -1,0 +1,35 @@
+$footerColor: lightblue;
+@mixin border($i){
+    @if $i == 1{
+        border: 1px solid red;
+    }
+    @else if $i == 2{
+        border: 1px solid yellow;
+    }
+    @else if $i == 3{
+        border: 1px solid green;
+    }
+}
+.footer{
+    height: 10%;
+    .footer-wrap{
+        display: flex;
+        @include fullSize;
+        background-color: $footerColor;
+        @include shadow;
+        .footer-text{
+            @include blockNames(left);
+        }
+        .footer-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 100px;
+        }
+   }
+ }
+@for $i from 1 through 3{
+    .i#{$i}{
+        @include border($i);
+    }
+}

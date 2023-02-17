@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Переешите сценарий и воспользуйтесь одним из методов, изученных в уроке. Поменяйте код так, чтобы сохранить его повдение.
+    </pre>
+    <script>
+        let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+        let oddValues = [];
+        let evenValues = [];
+        let oddValuesPosition = 0;
+        let evenValuesPosition = 0;
+
+        // for (let value of values)
+        // {
+        //     if (value % 2 == 0)
+        //     {
+        //         evenValues[evenValuesPosition] = value;
+        //         evenValuesPosition++;
+        //     }
+        //     else
+        //     {
+        //         oddValues[oddValuesPosition] = value;
+        //         oddValuesPosition++;
+        //     }
+        // }
+
+        // console.log("Нечетные значения");
+        // for (let oddVal of oddValues)
+        // {
+        //     console.log(oddVal);
+        // }
+
+        // console.log("Четные значения");
+        // for (let evenVal of evenValues)
+        // {
+        //     console.log(evenVal);
+        // }
+
+
+        for (let value of values)
+        {
+            if (value % 2 == 0)
+            {
+               evenValues.push(value);
+            }
+            else
+            {
+                oddValues.push(value);
+            }
+        }
+
+        console.log("Нечетные значения");
+        for (let i =0; i < oddValues.length; i++)
+        {
+            console.log(oddValues[i]);
+        }
+
+        console.log("Четные значения");
+        for (let i =0; i<evenValues.length; i++)
+        {
+            console.log(evenValues[i]);
+        }
+    </script>
+</body>
+</html>

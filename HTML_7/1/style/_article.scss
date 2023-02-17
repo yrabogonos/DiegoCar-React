@@ -1,0 +1,12 @@
+$articleTheme: #B3D6FE;
+.article{
+    flex-basis: 80%;
+    .article-wrap{
+        @include fullSize;
+        @include shadow;
+        background-color: $articleTheme;
+        .article-text{
+           @include blockNames(center);
+        }
+    }
+}

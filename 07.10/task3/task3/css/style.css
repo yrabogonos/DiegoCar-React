@@ -1,0 +1,28 @@
+body{margin: 0;}
+.page{
+    height: 1800px;
+    background-color: rgb(207, 199, 199);
+}
+.popup{
+    width: 50%;
+    height: 400px;
+    background: rgba(0,0,0,0.4);
+    margin: 0 auto;
+    position: fixed;
+    left: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-info{
+    background-color: white;
+    height: 70%;
+    flex: 0 0 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    padding-left: 30px;
+    font-size: 24px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/nullstyle.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="page-wrap">
+        <header>
+            <div class="header-wrap">
+                Travel agency
+            </div>
+        </header>
+        <main>
+             <aside>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+             </aside>
+             <section>
+                <div class="section-wrap">
+                    <div class="container">
+                        <div class="section-card">
+                            <div class="card-photo">
+                                <img src="./img/1.jpg" alt="">
+                            </div>
+                            <div class="card-title">Hotel №1</div>
+                            <div class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repudiandae praesentium quia expedita dicta maiores dolorum adipisci facere, ipsam dolor cupiditate modi! Sed quisquam quos eum minima repellendus aliquam soluta.</div>
+                            <button class="section-map">View on map</button>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20599.98837033751!2d23.949132079101556!3d49.804895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7a69062d015%3A0x9d4e4498bf048244!2sUrban!5e0!3m2!1suk!2sua!4v1675448299024!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="section-card">
+                            <div class="card-photo">
+                                <img src="./img/2.jpg" alt="">
+                            </div>
+                            <div class="card-title">Hotel №1</div>
+                            <div class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repudiandae praesentium quia expedita dicta maiores dolorum adipisci facere, ipsam dolor cupiditate modi! Sed quisquam quos eum minima repellendus aliquam soluta.</div>
+                            <button class="section-map">View on map</button>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20616.448242283677!2d24.04876807910156!3d49.766202999999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae900508afd65%3A0xf3c8b9567a21ca81!2z0JrQvtC_0LA!5e0!3m2!1suk!2sua!4v1675448469887!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="section-card">
+                            <div class="card-photo">
+                                <img src="./img/3.png" alt="">
+                            </div>
+                            <div class="card-title">Hotel №1</div>
+                            <div class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repudiandae praesentium quia expedita dicta maiores dolorum adipisci facere, ipsam dolor cupiditate modi! Sed quisquam quos eum minima repellendus aliquam soluta.</div>
+                            <button class="section-map">View on map</button>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20604.085073249946!2d24.022396379101572!3d49.795266999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae86d47fb4e8d%3A0x3958e662a3837e1e!2z0JXQutGA0LDQvQ!5e0!3m2!1suk!2sua!4v1675448493311!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="section-card">
+                            <div class="card-photo">
+                                <img src="./img/4.jpg" alt="">
+                            </div>
+                            <div class="card-title">Hotel №1</div>
+                            <div class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repudiandae praesentium quia expedita dicta maiores dolorum adipisci facere, ipsam dolor cupiditate modi! Sed quisquam quos eum minima repellendus aliquam soluta.</div>
+                            <button class="section-map">View on map</button>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20604.085073249946!2d24.022396379101572!3d49.795266999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae815ad882505%3A0x93c5a313fa4f8c95!2sSonata%20hotel!5e0!3m2!1suk!2sua!4v1675448509952!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+             </section>
+       </main>
+        
+        <footer>
+            My footer
+        </footer>
+    </div>
+
+    <script>
+        let btns = document.querySelectorAll('.section-map');
+        
+        btns.forEach(btn => btn.addEventListener('click', function(){
+             btn.nextElementSibling.style.visibility = 'visible';
+        }));
+     </script>
+</body>
+</html>

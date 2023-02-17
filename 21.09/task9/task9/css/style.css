@@ -1,0 +1,22 @@
+.container{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.menu-items{
+    background-color: #d3d3d3;
+}
+.item{
+    padding: 15px 0px 15px 15px;
+    font-size: 18px;
+}
+.item a{
+    color: #2b24c3;
+}
+.item:first-child a{
+    color: black;
+    text-decoration: none;
+}
+.item:first-child{
+    background-color: #228b22;
+}
