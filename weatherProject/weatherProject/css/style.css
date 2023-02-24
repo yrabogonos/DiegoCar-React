@@ -1,0 +1,452 @@
+.page-wrap{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header{
+   
+    height: 125px;
+    
+}
+.header-wrap {
+    height: 100%;
+    padding-top: 20px;
+}
+.container {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+.header-items {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.header-logo {
+    display: flex; 
+    flex: 0 1 33.333%;
+}
+.header-logo img{
+    width: 50px;
+    height: 50px;
+}
+.logo-name{
+    font-size: 24px;    
+    color: #7869df;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.logo-name span{
+    color: gray;
+    font-weight: lighter;
+}
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex: 0 1 33.333%;
+}   
+.header-links a{
+    font-size: 24px;
+    color: black;
+   
+}
+.header-controls {
+    flex: 0 1 33.333%;
+    height: 100%;
+   
+    
+}
+.header-controls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    
+}
+.ctrl-theme{
+    align-self: center;
+}
+.ctrl-theme img{
+    width: 30px;
+    height: 30px;
+}
+.main{
+   height: 100%;
+}
+.main-banner{
+    height: 600px;
+    width: 100%;
+   
+}
+.container-banner{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url('https://wecast.vercel.app/_next/static/media/banner-img.6da33f89.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+.banner-items{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 70px;
+    display: flex;
+    gap: 40%;
+}
+.banner-location{
+    display: flex;
+    flex-direction: column;
+    
+}
+.banner-city{
+    flex: 0 0 auto;
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+.banner-date{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.banner-update{
+    color: white;
+    font-size: 50px;
+}
+.banner-card{
+    height: 400px;
+    width: 300px;
+    flex-shrink: 0;
+}
+.card-wrap{
+    width: 100%;
+    height: 100%;
+    background-color: #6565c1;
+    border-radius: 30px;
+    
+}
+.card-container{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.card-today{
+    align-self: flex-start;
+    color: white;
+    font-size: 20px;
+    background-color: #353589;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.card-temp{
+    margin-top: 60px;
+    color: white;
+    font-size: 90px;
+    position: relative;
+    margin-bottom: 70px;
+}
+.card-temp::after{
+    content: '°C';
+    font-size: 50px;
+    position: absolute;
+    top: -20px;
+    
+}
+.card-time{
+    color: white;
+    font-size: 40px;
+}
+.card-banner-src{
+    width: 130px;
+    height:130px;
+}
+/* °C */
+.forecast{
+    margin-top: 50px;
+    height: 800px;
+}
+.forecast-cards{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 50px;
+  
+}
+.forecast-control{
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    align-items: center;
+  
+}
+.control-links{
+    display: flex;
+    align-items: center;
+}
+.control-links a{
+    font-size: 34px;
+    color: #939aaf;
+    padding-left: 50px;
+}
+.activated{
+   text-decoration: underline;
+   color: black;
+}
+.forecast-card-wrap{
+    background-color: #f7f8fa; 
+    width: 100%;
+    height: 100%; 
+    border-radius: 30px;
+}
+.forecast-card-temp{
+    color: #353589;
+}
+.forecast-card-time{
+    color: #353589;
+}
+.forecast-cards{
+    overflow:hidden;
+    width: 91%;
+    margin: 0 auto;
+}
+.control-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
+}
+.backward, .forward{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control-btns{
+    display: flex;
+    gap: 20px;
+}
+.backward:hover, .forward:hover{
+    background-color: #6565c1;
+    color: white;
+}
+
+.wcard{
+    height: 370px;
+    width: 240px;
+    flex-shrink: 0;
+}
+.wcard-wrap{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f8fa;
+    border-radius: 35%;
+    
+}
+.wcard-container{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.wcard-day{
+    padding-top:50px ;
+    color: #8a8a8b;
+    font-size: 20px;
+}
+.wcard-temp{
+    margin-top: 60px;
+    color: #353589;
+    font-size: 90px;
+    position: relative;
+}
+.wcard-temp::after{
+    content: '°C';
+    font-size: 50px;
+    position: absolute;
+    top: -20px;
+    
+}
+.sub{
+    height: 400px;
+}
+.sub-wrap{
+    height: 100%;
+    background: no-repeat url('../img/form-bg.png');
+
+}
+.footer{
+    height: 330px;
+}
+.footer-wrap{
+    height: 100%;
+    background-color: black;
+}
+.footer-container{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+.sub-container{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+.sub-items{
+    height: 100%;
+    display: flex;
+    gap: 250px;
+}
+.sub-text{
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    flex-basis: 550px;
+}
+.sub-form{
+    margin-top: 50px;
+    height: 300px;
+    flex-basis: 450px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.sub-form-tag{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+.form-input{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    height: 50px;
+}
+.form-input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    background-color: #45459b;
+    margin-top: 20px;
+}
+.logo-img{
+    width: 100px;
+    height: 100px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-p{
+    font-size: 60px;
+    color: white;
+    font-weight:100;
+    text-transform: uppercase;
+}
+.footer-p span{
+    font-weight: 900;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-fst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-bottom:0.1em solid white ;
+    width: 100%;
+    padding-top: 50px;
+}
+.footer-links{
+    align-self: center;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    gap: 40px;
+    padding-bottom: 15px;
+}
+.footer-scnd{
+    width: 100%;
+    display: flex;
+    flex-basis: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-rights{
+    color: white;
+    font-size: 15px;
+}
+.footer-social{
+    display: flex;
+    gap: 10px;
+}
+.social{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.social:hover{
+    color: black;
+    background-color: white;
+}
+.black-theme-card{
+    background-color: #121c32;
+    transition: all 2s;
+}
+.ctrl-btn{
+   
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    background-color: #6161bd;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+.ctrl-btn:hover{
+    position: relative;
+    top: 2px;
+    box-shadow: 0 14px 14px rgb(0 0 0 / 25%);
+
+}
