@@ -1,0 +1,197 @@
+#root{
+    height: 100%;
+}
+
+.navbar-brand{
+    color: red;
+}
+.header{
+   /* min-height: 900px; */
+  
+  
+}
+.header-wrap{
+   
+    background-image: url('../assets/img/back.png');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    
+}
+.nav-logo{
+    width: 150px;
+}
+.navbar-nav a{
+    font-size: 16px;
+    line-height: 20px;
+    color: #242424;
+    
+   
+}
+
+.navbar-nav{
+    padding-left: 50px;
+    width: 100%;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+}
+.nav-btn{
+    background-color: #FA002C;
+    width: 236px;
+    height: 58px;
+    border: none;
+    margin: 0 !important;
+    position: relative;
+}
+.nav-btn::before{
+    content: url('../assets/img/tel-icon.png');
+    top: 2px;
+    right: 10px;
+    position: relative;
+}
+.nav-btn:hover{
+    background-color: #FA002C;
+    border: none;
+}
+.b{
+    border: 1px solid red;
+}
+.main-header-container{
+    padding-right: 0px !important;
+}
+.main-header{
+    padding-right: 0px !important;
+}
+.main-banner{
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.64);
+    border: 1px solid white;
+    padding: 50px;
+}
+.main-banner h2{
+    font-weight: 800;
+    font-size: 52px;
+    /* font-size: 4vw; */
+    text-transform: uppercase;
+}
+@media screen and (max-width:464px) {
+    .main-banner h2{
+        font-size: 34px;
+    }
+}
+.main-banner h2 span{
+    color: #FA002C;
+}
+.main-banner p{
+    font-size: 20px;
+    font-weight: 600px;
+    color: #000000;
+    padding-bottom: 30px;
+}
+.main-countries{
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.64);
+    border: 1px solid white;
+    padding: 10px;
+    height: fit-content;
+  
+}
+.banner-list{
+    list-style: none;
+}
+.banner-list li{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+
+}
+.banner-list li::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/img/check.png');
+    background-size: contain;
+    position: relative;
+    right: 35px;
+    bottom: 25px;
+}
+.banner-list li:nth-child(2):after{
+    bottom: 60px;
+}
+.banner-btn{
+    background-color: #FA002C;
+    width: 236px;
+    height: 80px;
+    border: none;
+    margin: 0 !important;
+    position: relative;
+}
+.banner-btn:hover{
+    background-color: #FA002C;
+}
+
+
+.countries-item{
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.text-p{
+    font-size: 18px;
+    color: #000000;
+}
+
+.item-img-kor{
+    background-image: url('../assets/img/korea.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 84px;
+    height: 64px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-right: 20px;
+    background-position: center;
+
+}
+.item-img-oae{
+    background-image: url('../assets/img/oae.png');
+    background-size: 200%;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-right: 20px;
+    background-position: left;
+  
+}
+.item-img-kaz{
+    background-image: url('../assets/img/kazahstan.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-right: 20px;
+    background-position: center;
+}
+.item-img-china{
+    background-image: url('../assets/img/china.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-right: 20px;
+    background-position: center;
+}

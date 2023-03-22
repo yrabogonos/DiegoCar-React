@@ -1,0 +1,149 @@
+.process{
+}
+.process-wrap{
+    padding: 70px 0px;
+    background-color: #F4F6F8;
+  
+}
+.b{
+    border: 1px solid red;
+}
+.proc-container{
+    margin: 0 auto;
+    width: 80%;
+}
+.process-title{
+    font-size: 50px;
+    color: #000000;
+}
+.process-undertitle{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.process-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.item-num{
+    color: #FA002C;
+    font-size: 53px;
+    font-weight: 700;
+    position: relative;
+}
+.item-descr{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.grid-item{
+    gap: 50px;
+    border-bottom: 2px dashed #D6A7AF;
+    border-right: 2px dashed #D6A7AF;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 30px 40px;
+    flex-wrap: nowrap;
+}
+.grid-item:nth-child(5){
+    padding-top: 50px;
+}
+.grid-item:nth-child(6){
+    padding-top: 50px;
+}
+.grid-item:nth-child(7){
+    padding-top: 50px;
+}
+.grid-item:nth-child(8){
+    padding-top: 50px;
+}
+
+.item-num::after{
+    content: url('../assets/img/chain-small.png');
+    position: relative;
+    left: 28px;
+    bottom: 15px;
+  
+}
+@media screen and (max-width: 1182px){
+    .process-grid{
+     
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+}
+@media screen and (max-width: 576px){
+    .process-title{
+        font-size: 44px;
+        color: #000000;
+    }
+    .proc-container{
+        margin: 0 auto;
+        width: 96%;
+    }
+    .process-undertitle{
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 50px;
+    }
+    .process-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: left;
+        position: relative;
+    }
+    .item-num{
+        color: #FA002C;
+        font-size: 53px;
+        font-weight: 700;
+        margin-left: 50px;
+        position: relative;
+    }
+    .item-num::after{
+        content: '';
+        width: 8px;
+        height: 8px;
+        display: block;
+        border-radius: 50%;
+        background-color:#FA002C;
+        position: relative;
+        bottom: 50px;
+        left: -35px;
+        
+    }
+   
+    .item-descr{
+        color: #000000;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .grid-item{
+        gap: 50px;
+        align-items: center;
+        position: relative;
+        border: none;
+        flex-direction: row;
+        padding: 0;
+    }
+    .process-grid::after{
+        content: url('../assets/img/chain.png');
+        position: absolute;
+        left: 18px;
+        top: 40px;
+        
+    }
+    .grid-item:nth-child(5){
+        padding-top: 0px;
+    }
+    .grid-item:nth-child(6){
+        padding-top: 0px;
+    }
+    .grid-item:nth-child(7){
+        padding-top: 0px;
+    }
+    .grid-item:nth-child(8){
+        padding-top: 0px;
+    }
+    
+}
