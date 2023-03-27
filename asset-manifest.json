@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DiegoCar-React/static/css/main.c7a8c279.css",
-    "main.js": "/DiegoCar-React/static/js/main.7b1b6ec0.js",
+    "main.js": "/DiegoCar-React/static/js/main.04d14cee.js",
     "static/js/787.d053ff59.chunk.js": "/DiegoCar-React/static/js/787.d053ff59.chunk.js",
     "static/media/back.png": "/DiegoCar-React/static/media/back.8c414d076ba6c86eda05.png",
     "static/media/citroenC3.jpg": "/DiegoCar-React/static/media/citroenC3.c56c2851752f553cd045.jpg",
@@ -16,11 +16,11 @@
     "static/media/oae.png": "/DiegoCar-React/static/media/oae.eb25eb585e56cc2e7a8b.png",
     "index.html": "/DiegoCar-React/index.html",
     "main.c7a8c279.css.map": "/DiegoCar-React/static/css/main.c7a8c279.css.map",
-    "main.7b1b6ec0.js.map": "/DiegoCar-React/static/js/main.7b1b6ec0.js.map",
+    "main.04d14cee.js.map": "/DiegoCar-React/static/js/main.04d14cee.js.map",
     "787.d053ff59.chunk.js.map": "/DiegoCar-React/static/js/787.d053ff59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7a8c279.css",
-    "static/js/main.7b1b6ec0.js"
+    "static/js/main.04d14cee.js"
   ]
 }
