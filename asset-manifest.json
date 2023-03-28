@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/DiegoCar-React/static/css/main.c7a8c279.css",
-    "main.js": "/DiegoCar-React/static/js/main.04d14cee.js",
+    "main.css": "/DiegoCar-React/static/css/main.b962baf5.css",
+    "main.js": "/DiegoCar-React/static/js/main.548cd162.js",
     "static/js/787.d053ff59.chunk.js": "/DiegoCar-React/static/js/787.d053ff59.chunk.js",
     "static/media/back.png": "/DiegoCar-React/static/media/back.8c414d076ba6c86eda05.png",
     "static/media/citroenC3.jpg": "/DiegoCar-React/static/media/citroenC3.c56c2851752f553cd045.jpg",
+    "static/media/plug.jpg": "/DiegoCar-React/static/media/plug.b6306b0685b1d4d77a9b.jpg",
     "static/media/bc.png": "/DiegoCar-React/static/media/bc.4f9a4eb2c24eb8593de4.png",
     "static/media/kazahstan.png": "/DiegoCar-React/static/media/kazahstan.ae9b081bc4524f282421.png",
     "static/media/cherry.jpg": "/DiegoCar-React/static/media/cherry.b3d1b75f168d8880c2f1.jpg",
@@ -15,12 +16,12 @@
     "static/media/icon.png": "/DiegoCar-React/static/media/icon.4a1459b30fd41d6183d2.png",
     "static/media/oae.png": "/DiegoCar-React/static/media/oae.eb25eb585e56cc2e7a8b.png",
     "index.html": "/DiegoCar-React/index.html",
-    "main.c7a8c279.css.map": "/DiegoCar-React/static/css/main.c7a8c279.css.map",
-    "main.04d14cee.js.map": "/DiegoCar-React/static/js/main.04d14cee.js.map",
+    "main.b962baf5.css.map": "/DiegoCar-React/static/css/main.b962baf5.css.map",
+    "main.548cd162.js.map": "/DiegoCar-React/static/js/main.548cd162.js.map",
     "787.d053ff59.chunk.js.map": "/DiegoCar-React/static/js/787.d053ff59.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7a8c279.css",
-    "static/js/main.04d14cee.js"
+    "static/css/main.b962baf5.css",
+    "static/js/main.548cd162.js"
   ]
 }
