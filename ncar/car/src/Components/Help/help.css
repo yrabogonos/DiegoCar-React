@@ -1,0 +1,176 @@
+
+.help{
+    padding-top: 70px;
+    margin-bottom: 70px;
+    background-color: #F5F5F5;
+  
+}
+.help-card{
+    position: relative;
+
+    
+}
+.card-wrap{
+    
+    height: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    background-image:  url('../../assets/img/bc.png');
+    background-size: cover;
+    background-position: center;
+    border-right: 7px solid #EAEAEA;
+    border-bottom: 7px solid #EAEAEA;
+  
+   
+  
+}
+.card-blur{
+    height: 100%;
+    background-image: linear-gradient(to bottom left, #FFFF 20%, rgba(255, 255, 255, 0) 100%);
+}
+.card-car{
+    position: absolute;
+    display: block;
+  
+    width: fit-content;
+    height: fit-content;
+    background-size: contain;
+    transform: rotateY(180deg);
+    bottom: -5%;
+    left: -5%; 
+}
+.card-car img{
+    width: 100%;
+   
+}
+.reserve-space{
+    height: 110px;
+}
+
+.b{
+    border: 1px solid red;
+}
+
+.card-form{
+    padding: 50px;
+    background-color: white;
+    margin: 50px;
+    border-radius: 22px;
+   
+
+}
+.form-title{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.form-p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 10px;
+
+}
+.form-input{
+    width: 100%;
+    border: 1px solid #C9C9C9;
+    border-radius: 14px;
+    height: 72px;
+    margin-bottom: 20px;
+}
+.form-sub{
+    background-color: #FA002C;
+    height: 72px;
+    width: 100%;
+    color:white;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 14px;
+    border: none;
+}
+.help-items{
+    margin-top: 50px;
+}
+.help-icon{
+    height: 60px;
+    width: 60px;
+    border: 3px solid #FA002C26;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.help-text{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+.mobile{
+    margin-top: 150px;
+    display: none;
+    
+ 
+}
+.mobile-help-item{
+    padding: 20px;
+    border-radius: 16px;
+    background-color: white;
+    filter: drop-shadow( 0px 12px 3px rgba(0, 0, 0, 0.12));
+    /* drop-shadow: (0 2px 30px 0 rgba(0, 0, 0, 0.12)); */
+    margin-bottom: 30px;
+  
+}
+.mhelp-text{
+    padding-top: 30px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+   
+}
+.help-item{
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 1230px) {
+    .help-items{
+      display: none;
+    }
+    .form-title{
+        font-size: 40px;
+    }
+    .card-col1{
+     width: 100%;
+    }
+    .mobile{
+        display: block;
+    }
+ }
+ @media screen and (max-width: 414px) {
+   
+   .mhelp-text{
+        font-size: 16px;
+    }
+    .form-title{
+        font-size:30px;
+    }
+    .form-sub{
+        font-size: 14px !important;
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+   
+    .form-sub{
+        font-size: 18px;
+    }
+    .mhelp-text{
+        font-size: 22px;
+    }
+   
+ }
+

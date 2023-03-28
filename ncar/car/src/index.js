@@ -6,11 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
+import data from './Components/data/data';
+import {BrowserRouter} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-    <App />
+    <BrowserRouter>
+        <App data= {data}/>
+    </BrowserRouter>
 
 );
 
